@@ -18,5 +18,9 @@ void visit_inorder(int elem_count, int index) {
 void Solution() {
     int layer_count;
     scanf("%d", &layer_count);
+    if (layer_count <= 0) {
+        printf("%d", -1);
+        return;
+    }
     visit_inorder(layer_count, 1);
 }
