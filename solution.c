@@ -26,6 +26,7 @@ void Solution() {
         scanf("%d", &tree[i]);
     }
     mid_order(tree, 1);
+    free(tree);
 
     int depth = ceil(log2(n));
     printf("\n%d", depth);
